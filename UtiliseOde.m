@@ -8,6 +8,6 @@ clc;
 p = sobolset(12);
 y0 = [0;0;1;0;0;0;0;0;0;0;0;0];
 y0 = cat(1,y0,(p(2,:))');
-tspan = [0:0.05:1];
+tspan = [0;0.05;1];
 
 [tv1,yv1] = ode45(@(t,y) funx(t,y),tspan,y0);
